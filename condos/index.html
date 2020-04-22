@@ -87,27 +87,49 @@
 				<p>1) Import <em>Condos</em> into your application:</p>
 				<pre><code><span class="hljs-keyword">import</span> Condos <span class="hljs-keyword">from</span> <span class="hljs-string">'condos'</span>;</code></pre><p>2) Call an api method to request data:</p>
 				<p>With Promises:</p>
-				<pre><code>import Condos, { <span class="hljs-attribute">Precision, Neighbourhood, GroupType, OfferType } from 'condos';
+				<pre><code>import Condos, {
+    <span class="hljs-attribute">Precision,
+    GroupType,
+    OfferType,
+    NeighbourhoodTorontoDowntown,
+    NeighbourhoodTorontoEastEnd,
+    SublocalityToronto
+} from 'condos';
 
 Condos.listings({
-  precision</span>: Precision<span class="hljs-variable">.Narrow</span>,
-  neighbourhood: Neighbourhood<span class="hljs-variable">.KingWest</span>,
+  precision</span>: Precision<span class="hljs-variable">.Normal</span>,
+  neighbourhood: [
+      NeighbourhoodTorontoDowntown<span class="hljs-variable">.KingWest</span>,
+      NeighbourhoodTorontoEastEnd<span class="hljs-variable">.EastEndDanforth</span>,
+  ],
+  sublocality: [SublocalityToronto<span class="hljs-variable">.Etobicoke</span>],
   groupBy: GroupType<span class="hljs-variable">.Neighbourhood</span>,
   offer: OfferType<span class="hljs-variable">.Sale</span>,
 })<span class="hljs-variable">.then</span>(data =&gt; {
   console<span class="hljs-variable">.log</span>(data);
 });</code></pre><p>With async/await:</p>
-				<pre><code><span class="hljs-keyword">import</span> Condos, { Precision, Neighbourhood, GroupType, OfferType } <span class="hljs-keyword">from</span> <span class="hljs-string">'condos'</span>;
+				<pre><code><span class="hljs-keyword">import</span> Condos, {
+    <span class="hljs-type">Precision</span>,
+    <span class="hljs-type">GroupType</span>,
+    <span class="hljs-type">OfferType</span>,
+    <span class="hljs-type">NeighbourhoodTorontoDowntown</span>,
+    <span class="hljs-type">NeighbourhoodTorontoEastEnd</span>,
+    <span class="hljs-type">SublocalityToronto</span>
+} from 'condos';
 
-<span class="hljs-function">(<span class="hljs-params"><span class="hljs-keyword">async</span> (<span class="hljs-params"></span>) =&gt; {
-  <span class="hljs-keyword">const</span> data = <span class="hljs-keyword">await</span> Condos.listings(<span class="hljs-params">{
-    precision: Precision.Narrow,
-    neighbourhood: Neighbourhood.KingWest,
-    groupBy: GroupType.Neighbourhood,
-    offer: OfferType.Sale,
-  }</span>);
-  <span class="hljs-built_in">console</span>.log(<span class="hljs-params">data</span>);
-}</span>)<span class="hljs-params">()</span>;</span></code></pre>
+(async () =&gt; {
+  const <span class="hljs-class"><span class="hljs-keyword">data</span> = await <span class="hljs-type">Condos</span>.listings({
+      <span class="hljs-title">precision</span>: <span class="hljs-type">Precision</span>.<span class="hljs-type">Normal</span>,
+      <span class="hljs-title">neighbourhood</span>: [
+          <span class="hljs-type">NeighbourhoodTorontoDowntown</span>.<span class="hljs-type">KingWest</span>,
+          <span class="hljs-type">NeighbourhoodTorontoEastEnd</span>.<span class="hljs-type">EastEndDanforth</span>,
+      ],
+      <span class="hljs-title">sublocality</span>: [<span class="hljs-type">SublocalityToronto</span>.<span class="hljs-type">Etobicoke</span>],
+      <span class="hljs-title">groupBy</span>: <span class="hljs-type">GroupType</span>.<span class="hljs-type">Neighbourhood</span>,
+      <span class="hljs-title">offer</span>: <span class="hljs-type">OfferType</span>.<span class="hljs-type">Sale</span>,
+  });</span>
+  console.log(<span class="hljs-class"><span class="hljs-keyword">data</span>);</span>
+})();</code></pre>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
