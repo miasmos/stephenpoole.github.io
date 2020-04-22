@@ -97,14 +97,14 @@
 } from 'condos';
 
 Condos.listings({
-  precision</span>: Precision<span class="hljs-variable">.Normal</span>,
-  neighbourhood: [
-      NeighbourhoodTorontoDowntown<span class="hljs-variable">.KingWest</span>,
-      NeighbourhoodTorontoEastEnd<span class="hljs-variable">.EastEndDanforth</span>,
-  ],
-  sublocality: [SublocalityToronto<span class="hljs-variable">.Etobicoke</span>],
-  groupBy: GroupType<span class="hljs-variable">.Neighbourhood</span>,
-  offer: OfferType<span class="hljs-variable">.Sale</span>,
+    precision</span>: Precision<span class="hljs-variable">.Normal</span>,
+    neighbourhood: [
+        NeighbourhoodTorontoDowntown<span class="hljs-variable">.KingWest</span>,
+        NeighbourhoodTorontoEastEnd<span class="hljs-variable">.EastEndDanforth</span>,
+    ],
+    sublocality: [SublocalityToronto<span class="hljs-variable">.Etobicoke</span>],
+    groupBy: GroupType<span class="hljs-variable">.Neighbourhood</span>,
+    offer: OfferType<span class="hljs-variable">.Sale</span>,
 })<span class="hljs-variable">.then</span>(data =&gt; {
   console<span class="hljs-variable">.log</span>(data);
 });</code></pre><p>With async/await:</p>
@@ -144,6 +144,9 @@ Condos.listings({
 				<ul class="before-current">
 					<li class=" tsd-kind-enum">
 						<a href="enums/areatype.html" class="tsd-kind-icon">Area<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/bedtype.html" class="tsd-kind-icon">Bed<wbr>Type</a>
 					</li>
 					<li class=" tsd-kind-enum">
 						<a href="enums/grouptype.html" class="tsd-kind-icon">Group<wbr>Type</a>
@@ -260,10 +263,22 @@ Condos.listings({
 						<a href="enums/sublocalitytoronto.html" class="tsd-kind-icon">Sublocality<wbr>Toronto</a>
 					</li>
 					<li class=" tsd-kind-class">
+						<a href="classes/areasadapter.html" class="tsd-kind-icon">Areas<wbr>Adapter</a>
+					</li>
+					<li class=" tsd-kind-class">
 						<a href="classes/condosapi.html" class="tsd-kind-icon">Condos<wbr>Api</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/condosclient.html" class="tsd-kind-icon">Condos<wbr>Client</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/listingsadapter.html" class="tsd-kind-icon">Listings<wbr>Adapter</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/polygonsadapter.html" class="tsd-kind-icon">Polygons<wbr>Adapter</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/statsadapter.html" class="tsd-kind-icon">Stats<wbr>Adapter</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/area.html" class="tsd-kind-icon">Area</a>
@@ -302,7 +317,16 @@ Condos.listings({
 						<a href="interfaces/parsedarea.html" class="tsd-kind-icon">Parsed<wbr>Area</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/parsedlisting.html" class="tsd-kind-icon">Parsed<wbr>Listing</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/parsedpolygonitem.html" class="tsd-kind-icon">Parsed<wbr>Polygon<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/parsedstatinsightitem.html" class="tsd-kind-icon">Parsed<wbr>Stat<wbr>Insight<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/parsedstatsummary.html" class="tsd-kind-icon">Parsed<wbr>Stat<wbr>Summary</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/polygonitem.html" class="tsd-kind-icon">Polygon<wbr>Item</a>

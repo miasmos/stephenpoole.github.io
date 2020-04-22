@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>StatInsightItem | Condos</title>
+	<title>ParsedStatInsightItem | Condos</title>
 	<meta name="description" content="Documentation for Condos">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,10 +54,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="statinsightitem.html">StatInsightItem</a>
+					<a href="parsedstatinsightitem.html">ParsedStatInsightItem</a>
 				</li>
 			</ul>
-			<h1>Interface StatInsightItem</h1>
+			<h1>Interface ParsedStatInsightItem</h1>
 		</div>
 	</div>
 </header>
@@ -68,7 +68,12 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">StatInsightItem</span>
+						<span class="tsd-signature-symbol">{}</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">ParsedStatInsightItem</span>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -79,15 +84,13 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="statinsightitem.html#avg_dom" class="tsd-kind-icon">avg_<wbr>dom</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="statinsightitem.html#avg_price" class="tsd-kind-icon">avg_<wbr>price</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="statinsightitem.html#avg_price_change" class="tsd-kind-icon">avg_<wbr>price_<wbr>change</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="statinsightitem.html#avg_psf" class="tsd-kind-icon">avg_<wbr>psf</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="statinsightitem.html#avg_psf_change" class="tsd-kind-icon">avg_<wbr>psf_<wbr>change</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="statinsightitem.html#avg_sqft" class="tsd-kind-icon">avg_<wbr>sqft</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="statinsightitem.html#count" class="tsd-kind-icon">count</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="statinsightitem.html#count_psf" class="tsd-kind-icon">count_<wbr>psf</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="statinsightitem.html#end_date" class="tsd-kind-icon">end_<wbr>date</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="parsedstatinsightitem.html#avg_dom" class="tsd-kind-icon">avg_<wbr>dom</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="parsedstatinsightitem.html#avg_price" class="tsd-kind-icon">avg_<wbr>price</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="parsedstatinsightitem.html#avg_price_change" class="tsd-kind-icon">avg_<wbr>price_<wbr>change</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="parsedstatinsightitem.html#avg_psf" class="tsd-kind-icon">avg_<wbr>psf</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="parsedstatinsightitem.html#avg_psf_change" class="tsd-kind-icon">avg_<wbr>psf_<wbr>change</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="parsedstatinsightitem.html#avg_sqft" class="tsd-kind-icon">avg_<wbr>sqft</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="parsedstatinsightitem.html#end_date" class="tsd-kind-icon">end_<wbr>date</a></li>
 							</ul>
 						</section>
 					</div>
@@ -98,90 +101,70 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="avg_dom" class="tsd-anchor"></a>
 					<h3>avg_<wbr>dom</h3>
-					<div class="tsd-signature tsd-kind-icon">avg_<wbr>dom<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<div class="tsd-signature tsd-kind-icon">avg_<wbr>dom<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stephenpoole/condos/blob/8a3376b/src/types.ts#L236">types.ts:236</a></li>
+							<li>Defined in <a href="https://github.com/stephenpoole/condos/blob/8a3376b/src/types.ts#L246">types.ts:246</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="avg_price" class="tsd-anchor"></a>
 					<h3>avg_<wbr>price</h3>
-					<div class="tsd-signature tsd-kind-icon">avg_<wbr>price<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<div class="tsd-signature tsd-kind-icon">avg_<wbr>price<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stephenpoole/condos/blob/8a3376b/src/types.ts#L231">types.ts:231</a></li>
+							<li>Defined in <a href="https://github.com/stephenpoole/condos/blob/8a3376b/src/types.ts#L242">types.ts:242</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="avg_price_change" class="tsd-anchor"></a>
 					<h3>avg_<wbr>price_<wbr>change</h3>
-					<div class="tsd-signature tsd-kind-icon">avg_<wbr>price_<wbr>change<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<div class="tsd-signature tsd-kind-icon">avg_<wbr>price_<wbr>change<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stephenpoole/condos/blob/8a3376b/src/types.ts#L238">types.ts:238</a></li>
+							<li>Defined in <a href="https://github.com/stephenpoole/condos/blob/8a3376b/src/types.ts#L248">types.ts:248</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="avg_psf" class="tsd-anchor"></a>
 					<h3>avg_<wbr>psf</h3>
-					<div class="tsd-signature tsd-kind-icon">avg_<wbr>psf<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<div class="tsd-signature tsd-kind-icon">avg_<wbr>psf<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stephenpoole/condos/blob/8a3376b/src/types.ts#L233">types.ts:233</a></li>
+							<li>Defined in <a href="https://github.com/stephenpoole/condos/blob/8a3376b/src/types.ts#L244">types.ts:244</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="avg_psf_change" class="tsd-anchor"></a>
 					<h3>avg_<wbr>psf_<wbr>change</h3>
-					<div class="tsd-signature tsd-kind-icon">avg_<wbr>psf_<wbr>change<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<div class="tsd-signature tsd-kind-icon">avg_<wbr>psf_<wbr>change<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stephenpoole/condos/blob/8a3376b/src/types.ts#L237">types.ts:237</a></li>
+							<li>Defined in <a href="https://github.com/stephenpoole/condos/blob/8a3376b/src/types.ts#L247">types.ts:247</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="avg_sqft" class="tsd-anchor"></a>
 					<h3>avg_<wbr>sqft</h3>
-					<div class="tsd-signature tsd-kind-icon">avg_<wbr>sqft<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<div class="tsd-signature tsd-kind-icon">avg_<wbr>sqft<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stephenpoole/condos/blob/8a3376b/src/types.ts#L235">types.ts:235</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="count" class="tsd-anchor"></a>
-					<h3>count</h3>
-					<div class="tsd-signature tsd-kind-icon">count<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/stephenpoole/condos/blob/8a3376b/src/types.ts#L230">types.ts:230</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="count_psf" class="tsd-anchor"></a>
-					<h3>count_<wbr>psf</h3>
-					<div class="tsd-signature tsd-kind-icon">count_<wbr>psf<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/stephenpoole/condos/blob/8a3376b/src/types.ts#L234">types.ts:234</a></li>
+							<li>Defined in <a href="https://github.com/stephenpoole/condos/blob/8a3376b/src/types.ts#L245">types.ts:245</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="end_date" class="tsd-anchor"></a>
 					<h3>end_<wbr>date</h3>
-					<div class="tsd-signature tsd-kind-icon">end_<wbr>date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<div class="tsd-signature tsd-kind-icon">end_<wbr>date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stephenpoole/condos/blob/8a3376b/src/types.ts#L232">types.ts:232</a></li>
+							<li>Defined in <a href="https://github.com/stephenpoole/condos/blob/8a3376b/src/types.ts#L243">types.ts:243</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -200,34 +183,28 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface">
-						<a href="statinsightitem.html" class="tsd-kind-icon">Stat<wbr>Insight<wbr>Item</a>
+						<a href="parsedstatinsightitem.html" class="tsd-kind-icon">Parsed<wbr>Stat<wbr>Insight<wbr>Item</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="statinsightitem.html#avg_dom" class="tsd-kind-icon">avg_<wbr>dom</a>
+								<a href="parsedstatinsightitem.html#avg_dom" class="tsd-kind-icon">avg_<wbr>dom</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="statinsightitem.html#avg_price" class="tsd-kind-icon">avg_<wbr>price</a>
+								<a href="parsedstatinsightitem.html#avg_price" class="tsd-kind-icon">avg_<wbr>price</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="statinsightitem.html#avg_price_change" class="tsd-kind-icon">avg_<wbr>price_<wbr>change</a>
+								<a href="parsedstatinsightitem.html#avg_price_change" class="tsd-kind-icon">avg_<wbr>price_<wbr>change</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="statinsightitem.html#avg_psf" class="tsd-kind-icon">avg_<wbr>psf</a>
+								<a href="parsedstatinsightitem.html#avg_psf" class="tsd-kind-icon">avg_<wbr>psf</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="statinsightitem.html#avg_psf_change" class="tsd-kind-icon">avg_<wbr>psf_<wbr>change</a>
+								<a href="parsedstatinsightitem.html#avg_psf_change" class="tsd-kind-icon">avg_<wbr>psf_<wbr>change</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="statinsightitem.html#avg_sqft" class="tsd-kind-icon">avg_<wbr>sqft</a>
+								<a href="parsedstatinsightitem.html#avg_sqft" class="tsd-kind-icon">avg_<wbr>sqft</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="statinsightitem.html#count" class="tsd-kind-icon">count</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="statinsightitem.html#count_psf" class="tsd-kind-icon">count_<wbr>psf</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="statinsightitem.html#end_date" class="tsd-kind-icon">end_<wbr>date</a>
+								<a href="parsedstatinsightitem.html#end_date" class="tsd-kind-icon">end_<wbr>date</a>
 							</li>
 						</ul>
 					</li>
