@@ -86,9 +86,16 @@
 						<section class="tsd-index-section ">
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface"><a href="interfaces/form.html" class="tsd-kind-icon">Form</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/getoptions.html" class="tsd-kind-icon">Get<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/headline.html" class="tsd-kind-icon">Headline</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/headlineoptions.html" class="tsd-kind-icon">Headline<wbr>Options</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/loginbadges.html" class="tsd-kind-icon">Login<wbr>Badges</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/loginnotificationcount.html" class="tsd-kind-icon">Login<wbr>Notification<wbr>Count</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/loginoptions.html" class="tsd-kind-icon">Login<wbr>Options</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/loginresponse.html" class="tsd-kind-icon">Login<wbr>Response</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/loginuser.html" class="tsd-kind-icon">Login<wbr>User</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/postoptions.html" class="tsd-kind-icon">Post<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/scanconfig.html" class="tsd-kind-icon">Scan<wbr>Config</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/scandata.html" class="tsd-kind-icon">Scan<wbr>Data</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/scanfilteritem.html" class="tsd-kind-icon">Scan<wbr>Filter<wbr>Item</a></li>
@@ -97,6 +104,7 @@
 								<li class="tsd-kind-interface"><a href="interfaces/scanresponse.html" class="tsd-kind-icon">Scan<wbr>Response</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/scansort.html" class="tsd-kind-icon">Scan<wbr>Sort</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/scansymbols.html" class="tsd-kind-icon">Scan<wbr>Symbols</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/ticketresponse.html" class="tsd-kind-icon">Ticket<wbr>Response</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -110,6 +118,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-variable"><a href="globals.html#hostname" class="tsd-kind-icon">HOSTNAME</a></li>
 								<li class="tsd-kind-variable"><a href="globals.html#etag" class="tsd-kind-icon">etag</a></li>
+								<li class="tsd-kind-variable"><a href="globals.html#tradingviewclient" class="tsd-kind-icon">trading<wbr>View<wbr>Client</a></li>
 								<li class="tsd-kind-variable"><a href="globals.html#ua" class="tsd-kind-icon">ua</a></li>
 								<li class="tsd-kind-variable"><a href="globals.html#uuid" class="tsd-kind-icon">uuid</a></li>
 							</ul>
@@ -125,7 +134,7 @@
 					<div class="tsd-signature tsd-kind-icon">Headline<wbr>Response<span class="tsd-signature-symbol">:</span> <a href="interfaces/headline.html" class="tsd-signature-type">Headline</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stephenpoole/tradingview/blob/44d2fd4/src/type.ts#L20">type.ts:20</a></li>
+							<li>Defined in <a href="https://github.com/stephenpoole/tradingview/blob/bcaf74c/src/type.ts#L26">type.ts:26</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -138,7 +147,7 @@
 					<div class="tsd-signature tsd-kind-icon">HOSTNAME<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = process.env.HOSTNAME</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stephenpoole/tradingview/blob/44d2fd4/src/constants.ts#L1">constants.ts:1</a></li>
+							<li>Defined in <a href="https://github.com/stephenpoole/tradingview/blob/bcaf74c/src/constants.ts#L1">constants.ts:1</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -148,7 +157,17 @@
 					<div class="tsd-signature tsd-kind-icon">etag<span class="tsd-signature-symbol">:</span> <a href="globals.html#etag" class="tsd-signature-type">etag</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stephenpoole/tradingview/blob/44d2fd4/src/api/client.ts#L8">api/client.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/stephenpoole/tradingview/blob/bcaf74c/src/api/client.ts#L9">api/client.ts:9</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable">
+					<a name="tradingviewclient" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> trading<wbr>View<wbr>Client</h3>
+					<div class="tsd-signature tsd-kind-icon">trading<wbr>View<wbr>Client<span class="tsd-signature-symbol">:</span> <a href="classes/tradingviewclient.html" class="tsd-signature-type">TradingViewClient</a><span class="tsd-signature-symbol"> = new TradingViewClient()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/stephenpoole/tradingview/blob/bcaf74c/src/api/client.ts#L182">api/client.ts:182</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -158,7 +177,7 @@
 					<div class="tsd-signature tsd-kind-icon">ua<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;/home/travis/build/stephenpoole/tradingview/node_modules/@types/random-useragent/index&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stephenpoole/tradingview/blob/44d2fd4/src/api/client.ts#L7">api/client.ts:7</a></li>
+							<li>Defined in <a href="https://github.com/stephenpoole/tradingview/blob/bcaf74c/src/api/client.ts#L8">api/client.ts:8</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -168,7 +187,7 @@
 					<div class="tsd-signature tsd-kind-icon">uuid<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;/home/travis/build/stephenpoole/tradingview/node_modules/@types/uuid/index&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stephenpoole/tradingview/blob/44d2fd4/src/api/client.ts#L9">api/client.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/stephenpoole/tradingview/blob/bcaf74c/src/api/client.ts#L10">api/client.ts:10</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -209,6 +228,9 @@
 						<a href="classes/util.html" class="tsd-kind-icon">Util</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/form.html" class="tsd-kind-icon">Form</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/getoptions.html" class="tsd-kind-icon">Get<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
@@ -216,6 +238,24 @@
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/headlineoptions.html" class="tsd-kind-icon">Headline<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/loginbadges.html" class="tsd-kind-icon">Login<wbr>Badges</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/loginnotificationcount.html" class="tsd-kind-icon">Login<wbr>Notification<wbr>Count</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/loginoptions.html" class="tsd-kind-icon">Login<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/loginresponse.html" class="tsd-kind-icon">Login<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/loginuser.html" class="tsd-kind-icon">Login<wbr>User</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/postoptions.html" class="tsd-kind-icon">Post<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/scanconfig.html" class="tsd-kind-icon">Scan<wbr>Config</a>
@@ -241,6 +281,9 @@
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/scansymbols.html" class="tsd-kind-icon">Scan<wbr>Symbols</a>
 					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/ticketresponse.html" class="tsd-kind-icon">Ticket<wbr>Response</a>
+					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="globals.html#headlineresponse" class="tsd-kind-icon">Headline<wbr>Response</a>
 					</li>
@@ -249,6 +292,9 @@
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="globals.html#etag" class="tsd-kind-icon">etag</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#tradingviewclient" class="tsd-kind-icon">trading<wbr>View<wbr>Client</a>
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="globals.html#ua" class="tsd-kind-icon">ua</a>
@@ -265,6 +311,10 @@
 	<div class="container">
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>

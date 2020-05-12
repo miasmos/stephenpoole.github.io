@@ -79,16 +79,18 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="tradingviewclient.html#client" class="tsd-kind-icon">client</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="tradingviewclient.html#cookies" class="tsd-kind-icon">cookies</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="tradingviewclient.html#client" class="tsd-kind-icon">client</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="tradingviewclient.html#cookies" class="tsd-kind-icon">cookies</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="tradingviewclient.html#sessionid" class="tsd-kind-icon">session<wbr>Id</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static"><a href="tradingviewclient.html#get" class="tsd-kind-icon">get</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="tradingviewclient.html#getcookies" class="tsd-kind-icon">get<wbr>Cookies</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static"><a href="tradingviewclient.html#resolve" class="tsd-kind-icon">resolve</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="tradingviewclient.html#get" class="tsd-kind-icon">get</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="tradingviewclient.html#getcookies" class="tsd-kind-icon">get<wbr>Cookies</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="tradingviewclient.html#post" class="tsd-kind-icon">post</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="tradingviewclient.html#resolve" class="tsd-kind-icon">resolve</a></li>
 							</ul>
 						</section>
 					</div>
@@ -96,40 +98,58 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="client" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> client</h3>
+					<h3>client</h3>
 					<div class="tsd-signature tsd-kind-icon">client<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">AxiosInstance</span><span class="tsd-signature-symbol"> = axios.create({headers: {&quot;user-agent&quot;: ua.getRandom(({ browserName }) &#x3D;&gt;browserName &#x3D;&#x3D;&#x3D; &quot;Chrome&quot; ||browserName &#x3D;&#x3D;&#x3D; &quot;Firefox&quot; ||browserName &#x3D;&#x3D;&#x3D; &quot;Safari&quot;),dnt: 1,accept: &quot;*/*&quot;,origin: &#x60;https://www.${HOSTNAME}&#x60;,&quot;sec-fetch-site&quot;: &quot;same-site&quot;,&quot;sec-fetch-mode&quot;: &quot;cors&quot;,&quot;sec-fetch-dest&quot;: &quot;empty&quot;,referer: &#x60;https://www.${HOSTNAME}/&#x60;,&quot;accept-language&quot;: &quot;en-GB,en;q&#x3D;0.9,en-US;q&#x3D;0.8,fr;q&#x3D;0.7&quot;}})</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stephenpoole/tradingview/blob/44d2fd4/src/api/client.ts#L24">api/client.ts:24</a></li>
+							<li>Defined in <a href="https://github.com/stephenpoole/tradingview/blob/bcaf74c/src/api/client.ts#L33">api/client.ts:33</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="cookies" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> cookies</h3>
-					<div class="tsd-signature tsd-kind-icon">cookies<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = TradingViewClient.getCookies()</span></div>
+					<h3>cookies</h3>
+					<div class="tsd-signature tsd-kind-icon">cookies<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> = this.getCookies()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stephenpoole/tradingview/blob/44d2fd4/src/api/client.ts#L43">api/client.ts:43</a></li>
+							<li>Defined in <a href="https://github.com/stephenpoole/tradingview/blob/bcaf74c/src/api/client.ts#L52">api/client.ts:52</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-index-signature">
+								<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="sessionid" class="tsd-anchor"></a>
+					<h3>session<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">session<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/stephenpoole/tradingview/blob/bcaf74c/src/api/client.ts#L54">api/client.ts:54</a></li>
 						</ul>
 					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
 					<a name="get" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> get</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">get&lt;T&gt;<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>form<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">; </span>isCached<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">; </span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>subdomain<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../enums/subdomain.html#news" class="tsd-signature-type">News</a><span class="tsd-signature-symbol"> | </span><a href="../enums/subdomain.html#scanner" class="tsd-signature-type">Scanner</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<h3>get</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">get&lt;T&gt;<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>form<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">; </span>isCached<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">; </span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>subdomain<span class="tsd-signature-symbol">: </span><a href="../enums/subdomain.html" class="tsd-signature-type">Subdomain</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stephenpoole/tradingview/blob/44d2fd4/src/api/client.ts#L45">api/client.ts:45</a></li>
+									<li>Defined in <a href="https://github.com/stephenpoole/tradingview/blob/bcaf74c/src/api/client.ts#L56">api/client.ts:56</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -141,7 +161,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>form<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">; </span>isCached<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">; </span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>subdomain<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../enums/subdomain.html#news" class="tsd-signature-type">News</a><span class="tsd-signature-symbol"> | </span><a href="../enums/subdomain.html#scanner" class="tsd-signature-type">Scanner</a><span class="tsd-signature-symbol"> }</span></h5>
+									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>form<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">; </span>isCached<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">; </span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>subdomain<span class="tsd-signature-symbol">: </span><a href="../enums/subdomain.html" class="tsd-signature-type">Subdomain</a><span class="tsd-signature-symbol"> }</span></h5>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter">
 											<h5>form<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span></h5>
@@ -150,13 +170,13 @@
 											<h5>is<wbr>Cached<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
 										</li>
 										<li class="tsd-parameter">
-											<h5>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span></h5>
+											<h5>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span></h5>
 										</li>
 										<li class="tsd-parameter">
 											<h5>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
 										</li>
 										<li class="tsd-parameter">
-											<h5>subdomain<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../enums/subdomain.html#news" class="tsd-signature-type">News</a><span class="tsd-signature-symbol"> | </span><a href="../enums/subdomain.html#scanner" class="tsd-signature-type">Scanner</a></h5>
+											<h5>subdomain<span class="tsd-signature-symbol">: </span><a href="../enums/subdomain.html" class="tsd-signature-type">Subdomain</a></h5>
 										</li>
 									</ul>
 								</li>
@@ -165,34 +185,85 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="getcookies" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> get<wbr>Cookies</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Cookies<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					<h3>get<wbr>Cookies</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Cookies<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stephenpoole/tradingview/blob/44d2fd4/src/api/client.ts#L80">api/client.ts:80</a></li>
+									<li>Defined in <a href="https://github.com/stephenpoole/tradingview/blob/bcaf74c/src/api/client.ts#L167">api/client.ts:167</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{}</span></h4>
+							<ul class="tsd-parameters">
+								<li class="tsd-parameter-index-signature">
+									<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
+					<a name="post" class="tsd-anchor"></a>
+					<h3>post</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">post&lt;T&gt;<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>form<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">; </span>isCached<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">; </span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>subdomain<span class="tsd-signature-symbol">: </span><a href="../enums/subdomain.html" class="tsd-signature-type">Subdomain</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/stephenpoole/tradingview/blob/bcaf74c/src/api/client.ts#L93">api/client.ts:93</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>form<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">; </span>isCached<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">; </span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>subdomain<span class="tsd-signature-symbol">: </span><a href="../enums/subdomain.html" class="tsd-signature-type">Subdomain</a><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>form<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>is<wbr>Cached<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>subdomain<span class="tsd-signature-symbol">: </span><a href="../enums/subdomain.html" class="tsd-signature-type">Subdomain</a></h5>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
 					<a name="resolve" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> resolve</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
+					<h3>resolve</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
 						<li class="tsd-signature tsd-kind-icon">resolve&lt;T&gt;<span class="tsd-signature-symbol">(</span>callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">AxiosPromise</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stephenpoole/tradingview/blob/44d2fd4/src/api/client.ts#L72">api/client.ts:72</a></li>
+									<li>Defined in <a href="https://github.com/stephenpoole/tradingview/blob/bcaf74c/src/api/client.ts#L139">api/client.ts:139</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -258,19 +329,25 @@
 					<li class="current tsd-kind-class">
 						<a href="tradingviewclient.html" class="tsd-kind-icon">Trading<wbr>View<wbr>Client</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="tradingviewclient.html#client" class="tsd-kind-icon">client</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="tradingviewclient.html#cookies" class="tsd-kind-icon">cookies</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="tradingviewclient.html#sessionid" class="tsd-kind-icon">session<wbr>Id</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
 								<a href="tradingviewclient.html#get" class="tsd-kind-icon">get</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="tradingviewclient.html#getcookies" class="tsd-kind-icon">get<wbr>Cookies</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
+								<a href="tradingviewclient.html#post" class="tsd-kind-icon">post</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
 								<a href="tradingviewclient.html#resolve" class="tsd-kind-icon">resolve</a>
 							</li>
 						</ul>
@@ -281,6 +358,9 @@
 						<a href="util.html" class="tsd-kind-icon">Util</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="../interfaces/form.html" class="tsd-kind-icon">Form</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="../interfaces/getoptions.html" class="tsd-kind-icon">Get<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
@@ -288,6 +368,24 @@
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="../interfaces/headlineoptions.html" class="tsd-kind-icon">Headline<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/loginbadges.html" class="tsd-kind-icon">Login<wbr>Badges</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/loginnotificationcount.html" class="tsd-kind-icon">Login<wbr>Notification<wbr>Count</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/loginoptions.html" class="tsd-kind-icon">Login<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/loginresponse.html" class="tsd-kind-icon">Login<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/loginuser.html" class="tsd-kind-icon">Login<wbr>User</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/postoptions.html" class="tsd-kind-icon">Post<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="../interfaces/scanconfig.html" class="tsd-kind-icon">Scan<wbr>Config</a>
@@ -313,6 +411,9 @@
 					<li class=" tsd-kind-interface">
 						<a href="../interfaces/scansymbols.html" class="tsd-kind-icon">Scan<wbr>Symbols</a>
 					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/ticketresponse.html" class="tsd-kind-icon">Ticket<wbr>Response</a>
+					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="../globals.html#headlineresponse" class="tsd-kind-icon">Headline<wbr>Response</a>
 					</li>
@@ -321,6 +422,9 @@
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="../globals.html#etag" class="tsd-kind-icon">etag</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="../globals.html#tradingviewclient" class="tsd-kind-icon">trading<wbr>View<wbr>Client</a>
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="../globals.html#ua" class="tsd-kind-icon">ua</a>
@@ -337,6 +441,10 @@
 	<div class="container">
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
