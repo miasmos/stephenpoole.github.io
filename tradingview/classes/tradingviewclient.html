@@ -85,8 +85,15 @@
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="tradingviewclient.html#hassession" class="tsd-kind-icon">has<wbr>Session</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="tradingviewclient.html#clearsession" class="tsd-kind-icon">clear<wbr>Session</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="tradingviewclient.html#get" class="tsd-kind-icon">get</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="tradingviewclient.html#getcookies" class="tsd-kind-icon">get<wbr>Cookies</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="tradingviewclient.html#post" class="tsd-kind-icon">post</a></li>
@@ -104,7 +111,7 @@
 					<div class="tsd-signature tsd-kind-icon">client<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">AxiosInstance</span><span class="tsd-signature-symbol"> = axios.create({headers: {&quot;user-agent&quot;: ua.getRandom(({ browserName }) &#x3D;&gt;browserName &#x3D;&#x3D;&#x3D; &quot;Chrome&quot; ||browserName &#x3D;&#x3D;&#x3D; &quot;Firefox&quot; ||browserName &#x3D;&#x3D;&#x3D; &quot;Safari&quot;),dnt: 1,accept: &quot;*/*&quot;,origin: &#x60;https://www.${HOSTNAME}&#x60;,&quot;sec-fetch-site&quot;: &quot;same-site&quot;,&quot;sec-fetch-mode&quot;: &quot;cors&quot;,&quot;sec-fetch-dest&quot;: &quot;empty&quot;,referer: &#x60;https://www.${HOSTNAME}/&#x60;,&quot;accept-language&quot;: &quot;en-GB,en;q&#x3D;0.9,en-US;q&#x3D;0.8,fr;q&#x3D;0.7&quot;}})</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stephenpoole/tradingview/blob/59c1b07/src/api/client.ts#L33">api/client.ts:33</a></li>
+							<li>Defined in <a href="https://github.com/stephenpoole/tradingview/blob/90c906a/src/api/client.ts#L33">api/client.ts:33</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -114,7 +121,7 @@
 					<div class="tsd-signature tsd-kind-icon">cookies<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> = this.getCookies()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stephenpoole/tradingview/blob/59c1b07/src/api/client.ts#L52">api/client.ts:52</a></li>
+							<li>Defined in <a href="https://github.com/stephenpoole/tradingview/blob/90c906a/src/api/client.ts#L52">api/client.ts:52</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -129,16 +136,53 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="sessionid" class="tsd-anchor"></a>
 					<h3>session<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">session<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<div class="tsd-signature tsd-kind-icon">session<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stephenpoole/tradingview/blob/59c1b07/src/api/client.ts#L54">api/client.ts:54</a></li>
+							<li>Defined in <a href="https://github.com/stephenpoole/tradingview/blob/90c906a/src/api/client.ts#L54">api/client.ts:54</a></li>
 						</ul>
 					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="hassession" class="tsd-anchor"></a>
+					<h3>has<wbr>Session</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> hasSession<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/stephenpoole/tradingview/blob/90c906a/src/api/client.ts#L181">api/client.ts:181</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="clearsession" class="tsd-anchor"></a>
+					<h3>clear<wbr>Session</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">clear<wbr>Session<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/stephenpoole/tradingview/blob/90c906a/src/api/client.ts#L185">api/client.ts:185</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
 					<a name="get" class="tsd-anchor"></a>
 					<h3>get</h3>
@@ -149,7 +193,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stephenpoole/tradingview/blob/59c1b07/src/api/client.ts#L56">api/client.ts:56</a></li>
+									<li>Defined in <a href="https://github.com/stephenpoole/tradingview/blob/90c906a/src/api/client.ts#L56">api/client.ts:56</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -195,7 +239,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stephenpoole/tradingview/blob/59c1b07/src/api/client.ts#L167">api/client.ts:167</a></li>
+									<li>Defined in <a href="https://github.com/stephenpoole/tradingview/blob/90c906a/src/api/client.ts#L167">api/client.ts:167</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{}</span></h4>
@@ -217,7 +261,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stephenpoole/tradingview/blob/59c1b07/src/api/client.ts#L93">api/client.ts:93</a></li>
+									<li>Defined in <a href="https://github.com/stephenpoole/tradingview/blob/90c906a/src/api/client.ts#L93">api/client.ts:93</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -263,7 +307,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stephenpoole/tradingview/blob/59c1b07/src/api/client.ts#L139">api/client.ts:139</a></li>
+									<li>Defined in <a href="https://github.com/stephenpoole/tradingview/blob/90c906a/src/api/client.ts#L139">api/client.ts:139</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -337,6 +381,12 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="tradingviewclient.html#sessionid" class="tsd-kind-icon">session<wbr>Id</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="tradingviewclient.html#hassession" class="tsd-kind-icon">has<wbr>Session</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="tradingviewclient.html#clearsession" class="tsd-kind-icon">clear<wbr>Session</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
 								<a href="tradingviewclient.html#get" class="tsd-kind-icon">get</a>
