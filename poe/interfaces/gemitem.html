@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ScanSort | TradingView</title>
-	<meta name="description" content="Documentation for TradingView">
+	<title>GemItem | Path of Exile</title>
+	<meta name="description" content="Documentation for Path of Exile">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">TradingView</a>
+					<a href="../index.html" class="title">Path of Exile</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -54,10 +54,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="scansort.html">ScanSort</a>
+					<a href="gemitem.html">GemItem</a>
 				</li>
 			</ul>
-			<h1>Interface ScanSort</h1>
+			<h1>Interface GemItem</h1>
 		</div>
 	</div>
 </header>
@@ -68,7 +68,12 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ScanSort</span>
+						<span class="tsd-signature-symbol">{}</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">GemItem</span>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -79,8 +84,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="scansort.html#sortby" class="tsd-kind-icon">sort<wbr>By</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="scansort.html#sortorder" class="tsd-kind-icon">sort<wbr>Order</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="gemitem.html#colour" class="tsd-kind-icon">colour</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="gemitem.html#socket" class="tsd-kind-icon">socket</a></li>
 							</ul>
 						</section>
 					</div>
@@ -89,22 +94,22 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="sortby" class="tsd-anchor"></a>
-					<h3>sort<wbr>By</h3>
-					<div class="tsd-signature tsd-kind-icon">sort<wbr>By<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="colour" class="tsd-anchor"></a>
+					<h3>colour</h3>
+					<div class="tsd-signature tsd-kind-icon">colour<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stephenpoole/tradingview/blob/f52399c/src/type.ts#L49">type.ts:49</a></li>
+							<li>Defined in <a href="https://github.com/stephenpoole/node-poe-api/blob/db57503/src/type.ts#L56">type.ts:56</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="sortorder" class="tsd-anchor"></a>
-					<h3>sort<wbr>Order</h3>
-					<div class="tsd-signature tsd-kind-icon">sort<wbr>Order<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="socket" class="tsd-anchor"></a>
+					<h3>socket</h3>
+					<div class="tsd-signature tsd-kind-icon">socket<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stephenpoole/tradingview/blob/f52399c/src/type.ts#L50">type.ts:50</a></li>
+							<li>Defined in <a href="https://github.com/stephenpoole/node-poe-api/blob/db57503/src/type.ts#L55">type.ts:55</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -121,115 +126,70 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-enum">
-						<a href="../enums/headlinecategory.html" class="tsd-kind-icon">Headline<wbr>Category</a>
+						<a href="../enums/itemframetype.html" class="tsd-kind-icon">Item<wbr>Frame<wbr>Type</a>
 					</li>
 					<li class=" tsd-kind-enum">
-						<a href="../enums/locale.html" class="tsd-kind-icon">Locale</a>
+						<a href="../enums/itemvaluetype.html" class="tsd-kind-icon">Item<wbr>Value<wbr>Type</a>
 					</li>
 					<li class=" tsd-kind-enum">
-						<a href="../enums/market.html" class="tsd-kind-icon">Market</a>
+						<a href="../enums/league.html" class="tsd-kind-icon">League</a>
 					</li>
 					<li class=" tsd-kind-enum">
-						<a href="../enums/subdomain.html" class="tsd-kind-icon">Subdomain</a>
+						<a href="../enums/stashtype.html" class="tsd-kind-icon">Stash<wbr>Type</a>
 					</li>
 					<li class=" tsd-kind-class">
-						<a href="../classes/sentiment.html" class="tsd-kind-icon">Sentiment</a>
+						<a href="../classes/poeapi.html" class="tsd-kind-icon">Poe<wbr>Api</a>
 					</li>
 					<li class=" tsd-kind-class">
-						<a href="../classes/tradingviewapi.html" class="tsd-kind-icon">Trading<wbr>View<wbr>Api</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/tradingviewclient.html" class="tsd-kind-icon">Trading<wbr>View<wbr>Client</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/util.html" class="tsd-kind-icon">Util</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="form.html" class="tsd-kind-icon">Form</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="getoptions.html" class="tsd-kind-icon">Get<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="headline.html" class="tsd-kind-icon">Headline</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="headlineoptions.html" class="tsd-kind-icon">Headline<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="loginbadges.html" class="tsd-kind-icon">Login<wbr>Badges</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="loginnotificationcount.html" class="tsd-kind-icon">Login<wbr>Notification<wbr>Count</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="loginoptions.html" class="tsd-kind-icon">Login<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="loginresponse.html" class="tsd-kind-icon">Login<wbr>Response</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="loginuser.html" class="tsd-kind-icon">Login<wbr>User</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="postoptions.html" class="tsd-kind-icon">Post<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="scanconfig.html" class="tsd-kind-icon">Scan<wbr>Config</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="scandata.html" class="tsd-kind-icon">Scan<wbr>Data</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="scanfilteritem.html" class="tsd-kind-icon">Scan<wbr>Filter<wbr>Item</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="scanoptionitem.html" class="tsd-kind-icon">Scan<wbr>Option<wbr>Item</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="scanoptions.html" class="tsd-kind-icon">Scan<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="scanresponse.html" class="tsd-kind-icon">Scan<wbr>Response</a>
+						<a href="../classes/poeclient.html" class="tsd-kind-icon">Poe<wbr>Client</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface">
-						<a href="scansort.html" class="tsd-kind-icon">Scan<wbr>Sort</a>
+						<a href="gemitem.html" class="tsd-kind-icon">Gem<wbr>Item</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="scansort.html#sortby" class="tsd-kind-icon">sort<wbr>By</a>
+								<a href="gemitem.html#colour" class="tsd-kind-icon">colour</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="scansort.html#sortorder" class="tsd-kind-icon">sort<wbr>Order</a>
+								<a href="gemitem.html#socket" class="tsd-kind-icon">socket</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-interface">
-						<a href="scansymbols.html" class="tsd-kind-icon">Scan<wbr>Symbols</a>
+						<a href="getoptions.html" class="tsd-kind-icon">Get<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="ticketresponse.html" class="tsd-kind-icon">Ticket<wbr>Response</a>
+						<a href="item.html" class="tsd-kind-icon">Item</a>
 					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="../globals.html#headlineresponse" class="tsd-kind-icon">Headline<wbr>Response</a>
+					<li class=" tsd-kind-interface">
+						<a href="itemcategory.html" class="tsd-kind-icon">Item<wbr>Category</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="itemproperties.html" class="tsd-kind-icon">Item<wbr>Properties</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="itempropertyvaluepair.html" class="tsd-kind-icon">Item<wbr>Property<wbr>Value<wbr>Pair</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="itemsockets.html" class="tsd-kind-icon">Item<wbr>Sockets</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="stashtabsoptions.html" class="tsd-kind-icon">Stash<wbr>Tabs<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="stashtabsresponse.html" class="tsd-kind-icon">Stash<wbr>Tabs<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="stashes.html" class="tsd-kind-icon">Stashes</a>
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="../globals.html#hostname" class="tsd-kind-icon">HOSTNAME</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="../globals.html#etag" class="tsd-kind-icon">etag</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="../globals.html#tradingviewclient" class="tsd-kind-icon">trading<wbr>View<wbr>Client</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="../globals.html#ua" class="tsd-kind-icon">ua</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="../globals.html#uuid" class="tsd-kind-icon">uuid</a>
+						<a href="../globals.html#poeclient" class="tsd-kind-icon">poe<wbr>Client</a>
 					</li>
 				</ul>
 			</nav>
@@ -241,15 +201,14 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
-			</ul>
-			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
 			</ul>
 		</div>
 	</div>
